@@ -33,3 +33,16 @@
           </div>
         </div>
         <div class="container">
+            <!-- Navbar Brand -->
+            <div class="navbar-header d-flex align-items-center justify-content-between">
+            <?php
+             if(function_exists('the_custom_logo')){
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $logo = wp_get_attachment_image_src($custom_logo_id);
+             }
+            ?>
+            <img style="height:40px;"class="mb-2 mx-auto logo" src="<?php echo $logo[0] ?>" alt="logo" >
+            <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+              <?php echo get_bloginfo('name');?> 
+            </a>
+            <!-- Toggle Button-->
