@@ -9,8 +9,22 @@
         <main class="posts-listing col-lg-8"> 
           <div class="container">
             <div class="row">
+              <?php 
 
-</div>
+                if( have_posts()){
+
+                  while( have_posts()){
+
+                    the_post();
+                    
+                    get_template_part('template-parts/post/content-archive');
+                    
+                  }
+                }
+              
+              
+              ?>
+          </div>
         </div>
               </main>
       </div>
