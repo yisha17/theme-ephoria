@@ -23,3 +23,13 @@
                 
     
           </div>
+          </div>
+              </main>
+              <?php get_template_part('sidebar') ?>
+      </div>
+      </div>
+    
+
+    <?php
+    get_footer();
+    ?>
