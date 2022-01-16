@@ -23,7 +23,8 @@
                 
     
           </div>
-          </div>
+    
+        </div>
               </main>
               <?php get_template_part('sidebar') ?>
       </div>
