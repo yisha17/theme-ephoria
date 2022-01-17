@@ -46,3 +46,40 @@
               <?php echo get_bloginfo('name');?> 
             </a>
             <!-- Toggle Button-->
+            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+          </div>
+          <!-- Navbar Menu -->
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+
+            <?php  
+
+              wp_nav_menu(
+
+                array(
+                  'menu' => 'primary',
+                  'container' => '',
+                  'theme_location' => 'primary',
+                  'items_wrap' => '<ul id="" class="navbar-nav ml-auto">%3$s</ul>',
+                  'add_li_class'  => 'nav-item',
+                  'add_a_class'  => 'nav-link',
+                )
+              );
+
+            ?>
+
+            <!-- <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link active ">Home</a>
+              </li>
+              <li class="nav-item"><a href="blog.html" class="nav-link ">Blog</a>
+              </li>
+              <li class="nav-item"><a href="post.html" class="nav-link ">Post</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link ">Contact</a>
+              </li>
+            </ul> -->
+            <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
+            <ul class="langs navbar-text"><a href="#" class="active"> <?php language_attributes(); ?></a><span>  
+          </div>
+        </div>
+      </nav>
+    </header>
