@@ -1,0 +1,18 @@
+div class="widget categories">
+        <header>
+          <h3 class="h6">Categories</h3>
+        </header>
+        <?php
+        $categories = get_categories('exclude=1&title_li=');
+        foreach ($categories as $cat) {
+          echo "<div class='item d-flex justify-content-between'><a href=\"" . $cat->category_nicename . "\">" . $cat->cat_name . "</a>
+                      <span>" . $cat->category_count . "</span></div>";
+        }
+        ?>
+        <!-- 
+            <div class="item d-flex justify-content-between"><a href="#">Growth</a><span>12</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">Local</a><span>25</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">Sales</a><span>8</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">Tips</a><span>17</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">Local</a><span>25</span></div> -->
+      </div>
