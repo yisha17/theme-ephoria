@@ -1,4 +1,5 @@
-<?php
+
+    <?php
     get_header();
     ?>
 
@@ -26,7 +27,7 @@
               ?>
           </div>
         </div>
-        </main>
+              </main>
       </div>
       </div>
     
