@@ -1,4 +1,4 @@
-div class="widget categories">
+<div class="widget categories">
         <header>
           <h3 class="h6">Categories</h3>
         </header>
