@@ -23,3 +23,16 @@
                   <?php endif; ?>
                  
                 </div>
+                <div class="add-comment">
+                  
+                  
+                  <?php
+                   
+                  if (comments_open()){
+                    comment_form();
+                  }
+                 
+                   ?>
+                  
+            </div>
+               
