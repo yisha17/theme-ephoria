@@ -45,6 +45,90 @@ function ephoria_register_scripts(){
     wp_enqueue_script('ephoria-main', get_template_directory_uri()."/assets/js/front.js",array(),'1.0',true);
 }
 
+function  ephoria_widget_areas(){
+    register_sidebar( 
+        array(
+           'before_title' => '', 
+           'after_title' => '', 
+           'before_widget' => '', 
+           'after_widget' => '',
+           'name' => 'Footer 1',
+           'id' => 'footer_1',
+           'description'=> 'Footer Widget Area'
+
+        )
+    );
+
+     register_sidebar( 
+        array(
+           'before_title' => '', 
+           'after_title' => '', 
+           'before_widget' => '<h6 class="text-white">', 
+           'after_widget' => '</h6>',
+           'name' => 'Logo Title',
+           'id' => 'logo_title',
+           'description'=> 'Footer Widget Area'
+
+        )
+    );
+
+    register_sidebar( 
+        array(
+           'before_title' => '', 
+           'after_title' => '', 
+           'before_widget' => '<ul class="list-unstyled">', 
+           'after_widget' => '</ul>',
+           'name' => 'Footer 2',
+           'id' => 'footer_2',
+           'description'=> 'Footer Widget Area'
+
+        )
+    );
+
+    register_sidebar( 
+        array(
+           'before_title' => '', 
+           'after_title' => '', 
+           'before_widget' => '', 
+           'after_widget' => '',
+           'name' => 'Footer 3',
+           'id' => 'footer_3',
+           'description'=> 'Footer Widget Area'
+
+        )
+    );
+
+
+     register_sidebar( 
+        array(
+           'before_title' => '', 
+           'after_title' => '', 
+           'before_widget' => '', 
+           'after_widget' => '',
+           'name' => 'Copy Right',
+           'id' => 'copy_right',
+           'description'=> 'Footer Widget Area'
+
+        )
+    );
+
+     register_sidebar( 
+        array(
+           'before_title' => '', 
+           'after_title' => '', 
+           'before_widget' => '', 
+           'after_widget' => '',
+           'name' => 'Author',
+           'id' => 'author',
+           'description'=> 'Footer Widget Area'
+
+        )
+    );
+
+
+}
+
+
 
 
 ?>
