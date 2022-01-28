@@ -5,7 +5,7 @@
 
 			$thumbnail_attributes = wp_get_attachment_image_src( $post_thumbnail_id, 'affinity-featured' );
 
-			//Calculate aspect ratio: h / w * 100%
+			
 			$ratio = $thumbnail_attributes[2] / $thumbnail_attributes[1] * 100; ?>
             
             
