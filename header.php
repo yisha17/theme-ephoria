@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <title>Bootstrap Blog - B4 Template by Bootstrap Temple</title> -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -13,7 +12,8 @@
     ?>
   
   </head>
-  <body>
+  <body <?php body_class( 'yishak' ); ?>>
+   <?php wp_body_open(); ?>
     <header class="header">
       <!-- Main Navbar-->
       <nav class="navbar navbar-expand-lg">
@@ -78,47 +78,8 @@
               </li>
             </ul> -->
             <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
-            <ul class="langs navbar-text"><a href="#" class="active">EN</a><span>           </span><a href="#">ES</a></ul>
+            <ul class="langs navbar-text"><a href="#" class="active"> <?php language_attributes(); ?></a><span>  
           </div>
         </div>
       </nav>
     </header>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Bootstrap CSS -->
-
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title><?php bloginfo('name')?></title>
-    <?php wp_head() ?>
-</head>
-<body <?php body_class()?>>
-
-<div class="heading">
-
-<header class="site-header">
-<h1>   <a href="<?php echo home_url()?>"><?php bloginfo('name')?></a>  </h1>
-<h4><?php bloginfo('description')?></h4>
-</header>
-</div>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
-  <div class="container">   
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-        <?php
-        wp_nav_menu( array(
-            'theme_location'    => 'top-menu',
-            'depth'             => 4,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => 'bs-example-navbar-collapse-1',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker(),
-        ) );
-        ?>
-    </div>
-</nav>

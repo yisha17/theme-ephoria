@@ -7,7 +7,8 @@
     <section class="intro">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          
+            <main class="post blog-post col-lg-8"> 
               <?php 
 
                 if( have_posts()){
@@ -16,19 +17,22 @@
 
                     the_post();
                     gt_set_post_view();
+                    
                     get_template_part('template-parts/post/content');
-
+                    
                   }
                 }
               
-              
+             
               ?>
-          </div>
+              </main>
+          <?php  get_template_part('sidebar') ?>
+         
         </div>
+        
       </div>
     </section>
     
-    <!-- Page Footer-->
 
     <?php
     get_footer();
