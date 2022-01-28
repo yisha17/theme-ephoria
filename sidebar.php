@@ -1,6 +1,6 @@
 
 <aside class="col-lg-4">
-      <!-- Widget [Search Bar Widget]-->
+      
       <div class="widget search">
         <header>
           <h3 class="h6">Search the blog</h3>
