@@ -8,8 +8,11 @@ function ephoria_theme_support(){
     add_theme_support( 'automatic-feed-links');
 }
 
-add_action('after_setup_theme','ephoria_theme_support');
+add_action('after_setup_theme','ephoria_theme_support')
+
+=======
 load_theme_textdomain('themename', get_template_directory() . '/languages');
+
 
 function ephoria_menus(){
     $location = array(
@@ -197,7 +200,7 @@ function gt_posts_custom_column_views( $column ) {
 add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 
-
+# this function show latest post
 
 // function latest_post() {
 

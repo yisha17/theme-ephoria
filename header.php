@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -12,8 +13,11 @@
     ?>
   
   </head>
+
+  <body>
   <body <?php body_class( 'yishak' ); ?>>
    <?php wp_body_open(); ?>
+
     <header class="header">
       <!-- Main Navbar-->
       <nav class="navbar navbar-expand-lg">
@@ -33,6 +37,9 @@
           </div>
         </div>
         <div class="container">
+          <!-- Navbar Brand -->
+          <div class="navbar-header d-flex align-items-center justify-content-between">
+
             <!-- Navbar Brand -->
             <div class="navbar-header d-flex align-items-center justify-content-between">
             <?php
@@ -78,6 +85,8 @@
               </li>
             </ul> -->
             <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
+
+           
             <ul class="langs navbar-text"><a href="#" class="active"> <?php language_attributes(); ?></a><span>  
           </div>
         </div>
