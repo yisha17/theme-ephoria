@@ -9,9 +9,7 @@
 			$ratio = $thumbnail_attributes[2] / $thumbnail_attributes[1] * 100; ?>
             
             
-			<!-- <div class="custom-header-image" style="padding-top: <?php echo esc_attr( $ratio ); ?>%; background-image: url(<?php echo esc_url( $thumbnail_attributes[0] ); ?>);">
-			</div> -->
-
+			
 
             <section style="background: url(<?php echo esc_url( $thumbnail_attributes[0] ); ?>); background-size: cover; background-position: center center" class="hero">
       <div class="container">
