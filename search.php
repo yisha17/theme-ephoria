@@ -1,8 +1,4 @@
-<<<<<<< HEAD
  <?php
-=======
-<?php
->>>>>>> ff6d5c9e4657dea49e6eca2d319af0fc659e21fb
     get_header();
     ?>
 
