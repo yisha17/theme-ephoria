@@ -6,7 +6,7 @@
     
     <div class="container">
       <div class="row">
-        <!-- Latest Posts -->
+      
         <main class="posts-listing col-lg-8"> 
           <div class="container">
             <div class="row">
