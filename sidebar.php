@@ -1,3 +1,4 @@
+
 <aside class="col-lg-4">
       <!-- Widget [Search Bar Widget]-->
       <div class="widget search">
@@ -76,6 +77,9 @@
       </div>
       <!-- Widget [Categories Widget]-->
       <div class="widget categories">
+
+<div class="widget categories">
+
         <header>
           <h3 class="h6">Categories</h3>
         </header>
@@ -94,6 +98,7 @@
             <div class="item d-flex justify-content-between"><a href="#">Local</a><span>25</span></div> -->
       </div>
       <!-- Widget [Tags Cloud Widget]-->
+
       <div class="widget tags">
         <header>
           <h3 class="h6">Tags</h3>
@@ -118,3 +123,6 @@
         </ul>
       </div>
     </aside>
+
+      </aside>
+      

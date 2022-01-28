@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <title>Bootstrap Blog - B4 Template by Bootstrap Temple</title> -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -12,8 +13,7 @@
     ?>
   
   </head>
-  <body <?php body_class( 'yishak' ); ?>>
-   <?php wp_body_open(); ?>
+  <body>
     <header class="header">
       <!-- Main Navbar-->
       <nav class="navbar navbar-expand-lg">
@@ -33,8 +33,8 @@
           </div>
         </div>
         <div class="container">
-            <!-- Navbar Brand -->
-            <div class="navbar-header d-flex align-items-center justify-content-between">
+          <!-- Navbar Brand -->
+          <div class="navbar-header d-flex align-items-center justify-content-between">
             <?php
              if(function_exists('the_custom_logo')){
                 $custom_logo_id = get_theme_mod('custom_logo');
@@ -78,7 +78,7 @@
               </li>
             </ul> -->
             <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
-            <ul class="langs navbar-text"><a href="#" class="active"> <?php language_attributes(); ?></a><span>  
+            <ul class="langs navbar-text"><a href="#" class="active">EN</a><span>           </span><a href="#">ES</a></ul>
           </div>
         </div>
       </nav>
