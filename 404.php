@@ -1,21 +1,36 @@
-<?php get_header(); ?>
 
-<div class="container">
+    <?php
+    get_header();
+    ?>
 
-<h4 class="mt-3"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?' ); ?></h4>
+    
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="posts-listing col-lg-8"> 
+          <div class="container">
+            <div class="row">
+                <h1>Page Not Found</h1>
+                
+              <?php
+              
 
-<div class="row">
-<div class="col-9">
-<?php get_search_form(); ?>
-<h3>Check out some of our popular content:</h3>
-<?php wp_get_archives( array( 'type' => 'postbypost', 'limit' => 10, 'format' => 'custom', 'before' => '', 'after' => '<br />' ) ); ?>
+              ?>
+          </div>
 
-</div>
-<div class="col-3">
-<?php get_sidebar();?>
-</div>
-</div>
+          <div class="row">
+                
+                
+    
+          </div>
+    
+        </div>
+              </main>
+              <?php get_template_part('sidebar') ?>
+      </div>
+      </div>
+    
 
-</div>
-
-<?php get_footer(); ?>
+    <?php
+    get_footer();
+    ?>
